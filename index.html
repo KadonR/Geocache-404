@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404 Not Found</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      color: #444;
+    }
+    h1 {
+      font-size: 64px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 40px;
+      color: #777;
+    }
+  </style>
+  <script>
+    const binary = "001100100011100100101110001110010011000100110010001100000011011000011100100110110001011100011100000110110001101100011001000110101001110010011011000101110001110000011011000110110011001000110101";
+    if (!window.location.search.includes("clue=")) {
+      const newURL = window.location.href + "?clue=" + binary;
+      window.history.replaceState({}, '', newURL);
+    }
+  </script>
+</head>
+<body>
+  <h1>404</h1>
+  <p>Oops! The page you are looking for cannot be found.</p>
+</body>
+</html>
