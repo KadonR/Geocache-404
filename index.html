@@ -12,18 +12,19 @@
       color: #444;
     }
     h1 {
-      font-size: 64px;
+      font-size: 64px; /* updated from 48px */
       margin-bottom: 10px;
     }
     p {
-      font-size: 40px;
+      font-size: 40px; /* updated from 18px */
       color: #777;
     }
   </style>
   <script>
-    const binary = "01001110001100100011100100101110001110010011000100110010001100000011011000100000010101110011100100110110001011100011100000110110001101100011001000110101"
+    // Continuous binary string of your coordinates
+    const binary = "01001110001100100011100100101110001110010011000100110010001100000011011000100000010101110011100100110110001011100011100000110110001101100011001000110101";
 
-";
+    // Only add to URL if it’s not already present
     if (!window.location.search.includes("clue=")) {
       const newURL = window.location.href + "?clue=" + binary;
       window.history.replaceState({}, '', newURL);
